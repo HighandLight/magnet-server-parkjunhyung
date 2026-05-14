@@ -70,7 +70,7 @@ public class InteractionService {
             boolean success = true;
 
             for(int li = 1; li < letters.length; ++li) {
-                int candidateIndex = findNextCandidate(letters[i], last, nodes, used);
+                int candidateIndex = findNextCandidate(letters[li], last, nodes, used);
                 if(candidateIndex < 0) {
                     success = false;
                     break;
